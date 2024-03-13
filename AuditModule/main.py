@@ -47,13 +47,17 @@ class MyService(pb2_grpc.MyServiceServicer):
         try:
             r = requests.post(url, headers=headers, data=data)
             status = r.status_code
+            response_data = r.json()
+            response_id = response_data.get('id')
         except requests.ConnectionError as e:
             print(e)
             status = "500"
+            response_id = "e7498b8b-0471-457b-9de8-5074bd61d53c"
         except requests.HTTPError as e:
             print(e)
             status = e.response.status_code
-        return status
+            response_id = "e7498b8b-0471-457b-9de8-5074bd61d53c"
+        return status, response_id
 
 server_conf_file_path = 'config/server_conf.json'
 with open(server_conf_file_path, 'r') as server_conf_file:
