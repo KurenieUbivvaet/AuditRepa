@@ -1,0 +1,18 @@
+{
+    "metamodelVersion": "4",
+    "module": "audit",
+    "events": [
+        {
+            "name": "Mikhail",
+            "description": "good",
+            "mode": "speed",
+            "success": "true",
+            "params": [
+                {
+                    "name": "DatabaseName",
+                    "description": "postgres"
+                }
+            ]
+        }
+    ]
+}

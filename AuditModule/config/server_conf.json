@@ -1,0 +1,7 @@
+{
+  "gRPC_HOST": "[::]",
+  "gRPC_PORT": "50052",
+  "SERVER_HTTP": "http",
+  "SERVER_HOST": "127.0.0.1",
+  "SERVER_PORT": "8000"
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST">
+        <div class="main">
+            <input type="text" name="name" placeholder="Название аудита"><br>
+            <input type="text" name="description" placeholder="Примечания аудита"><br>
+            <input type="text" name="mode" placeholder="Режим регистрации"><br>
+            <input type="text" name="success" placeholder="Успех события"><br>
+        </div>
+        <div id="params-container">
+            <div class="param">
+                <input type="text" name="parName" placeholder="Название параметра" required>
+                <input type="text" name="parDescription" placeholder="Значение параметра" required><br>
+            </div>
+        </div>
+        <br><br>
+        <button onclick="addParam()">Добавить параметр</button>
+        <input type="submit" value="Отправить"><br>
+    </form>
+    <a href="/audit">Список аудитов</a>
+    <script>
+        function addParam() {
+            var paramsConteiner = document.getElementById("params-container");
+
+            var paramDiv =document.createElement("div");
+            paramDiv.classList.add("param");
+
+            var nameInput = document.createElement("input");
+            nameInput.type = "text";
+            nameInput.name = "parName";
+            nameInput.placeholder = "Название параметра"
+            nameInput.required = true;
+
+            var descriptionInput = document.createElement("input");
+            descriptionInput.type = "text";
+            descriptionInput.name = "parDescription";
+            descriptionInput.placeholder = "Значение параметра"
+            descriptionInput.required = true;
+
+            paramDiv.appendChild(nameInput);
+            paramDiv.appendChild(descriptionInput);
+            paramsConteiner.appendChild(paramDiv);
+        }
+    </script>
+</body>
+</html>
