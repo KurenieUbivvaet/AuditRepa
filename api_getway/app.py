@@ -18,7 +18,7 @@ stub = pb2_grpc.MyServiceStub(channel)
 @app.route('/', methods=['GET','POST'])
 def index():
     if request.method == 'POST':
-        UUID = str(uuid.uuid4())
+        UUID = str(uuid.uuid1())
         name = request.form.get('name')
         description = request.form.get('description')
         mode = request.form.get('mode')
