@@ -1,13 +1,10 @@
-FROM python:3.12.1
+FROM python:3.12.1-slim-bullseye
 
 RUN mkdir -p ./api_getway
 WORKDIR ./api_getway
 
 COPY . .
 
-RUN pip install flask
-RUN pip install grpcio
-RUN pip install grpcio-tools
-RUN pip install protobuf
+RUN pip install flask grpcio grpcio-tools protobuf
 
 CMD ["python", "app.py"]
