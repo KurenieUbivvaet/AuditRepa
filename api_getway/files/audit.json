@@ -1,0 +1,54 @@
+[
+    {
+        "statusResponse": "200",
+        "id": "239cc817-1cee-44d7-8d95-584740ad6269"
+    },
+    {
+        "statusResponse": "200",
+        "id": "e9289900-1a16-47ad-9d45-baf7a75583cf"
+    },
+    {
+        "statusResponse": "200",
+        "id": "0431b426-03dd-46f0-a193-46296503c06d"
+    },
+    {
+        "statusResponse": "201",
+        "id": "c809d757-43a1-4cc4-8c79-d6cd2db87692"
+    },
+    {
+        "statusResponse": "201",
+        "id": "08c714b4-21ba-40ff-9209-dce8c0e07341"
+    },
+    {
+        "statusResponse": "<class 'requests.exceptions.HTTPError'>",
+        "id": "2d6125b2-833f-4dde-b0cd-0a0857aee04d"
+    },
+    {
+        "statusResponse": "<attribute 'args' of 'BaseException' objects>",
+        "id": "493df59a-c490-4001-aa28-a393a3503207"
+    },
+    {
+        "statusResponse": "(MaxRetryError(\"HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002A4B73067E0>: Failed to establish a new connection: [WinError 10061] \u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043e, \u0442.\u043a. \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440 \u043e\u0442\u0432\u0435\u0440\u0433 \u0437\u0430\u043f\u0440\u043e\u0441 \u043d\u0430 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435'))\"),)",
+        "id": "a70c681a-a683-424b-9458-d405d9bc8345"
+    },
+    {
+        "statusResponse": "",
+        "id": "337cf0f9-e51a-4abd-bfe2-9ccbda64372b"
+    },
+    {
+        "statusResponse": "<module 'requests.status_codes' from 'E:\\\\AuditModule\\\\.venv\\\\Lib\\\\site-packages\\\\requests\\\\status_codes.py'>",
+        "id": "b0d36290-5c77-444f-9ad3-65bd853a4e3e"
+    },
+    {
+        "statusResponse": "<lookup 'status_codes'>",
+        "id": "7ec4605f-e2d5-46e0-b7d7-1c9734c787e1"
+    },
+    {
+        "statusResponse": "<module 'requests.status_codes' from 'E:\\\\AuditModule\\\\.venv\\\\Lib\\\\site-packages\\\\requests\\\\status_codes.py'>",
+        "id": "e4131654-d4ef-4e40-bd45-078d0538759b"
+    },
+    {
+        "statusResponse": "('500', '00000000-0000-0000-0000-000000000000')",
+        "id": "5eeb3052-f19b-11ee-b5b8-d481d7d611d5"
+    }
+]

@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package api_getway;
+
+message AuditRequest{
+    string uuid = 1;
+    string name = 2;
+    string description = 3;
+    string mode = 4;
+    string success = 5;
+    repeated Param params = 6;
+}
+
+message Param{
+    string name = 1;
+    string description = 2;
+}
+
+message AuditResponse{
+    string uuid = 1;
+    string statusResponse = 2;
+}
+
+service MyService{
+    rpc CreateAudit (AuditRequest) returns (AuditResponse) {}
+}
+
